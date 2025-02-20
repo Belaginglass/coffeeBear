@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-grey-100 flex-col items-center">
-        <!-- Navbar -->
         <header class="bg-black text-white p-4">
             <div class="max-w-sm mx-auto flex flex-col space-y-2">
                 <p class="text-sm text-gray-300">Localização</p>
@@ -17,62 +16,59 @@
                         <img src="https://img.icons8.com/ios-glyphs/30/ffffff/search.png" class="h-5 w-5" alt="Buscar"/>
                     </button>
                 </div>
-                <input type="text" placeholder="🔍 Pesquise" class="w-full p-2 rounded-lg bg-gray-800 text-white placeholder-gray-400 focus:outline-none">
+                <input type="text" placeholder="Pesquisar" class="w-full p-2 rounded-lg bg-gray-800 text-white placeholder-gray-400 focus:outline-none">
             </div>
         </header>
 
-        <!-- Card de Promoção -->
         <section class="max-w-sm mx-auto mt-4 px-4">
-            <div class="relative bg-pink-300 text-white p-4 rounded-xl flex items-center">
-                <span class="absolute top-2 left-2 bg-pink-500 text-xs px-2 py-1 rounded-full font-bold">Promoção</span>
+            <div class=" relative bg-[url('/src/images/Banner1.png')] h-32 text-white p-4 rounded-xl flex items-center">
+                <span class="absolute top-2 left-2 bg-[#ED5151] text-xs px-2 py-1 rounded-full font-bold">Promoção</span>
                 <div>
                     <h2 class="text-2xl font-bold">Entrega Grátis</h2>
                 </div>
-                <img src="images/promocao.png" class="w-24 h-24 rounded-lg ml-auto">
             </div>
         </section>
 
         <!-- Categorias -->
         <section class="max-w-sm mx-auto mt-4 px-4">
             <div class="flex space-x-2 overflow-x-auto">
-                <button class="bg-pink-400 text-white px-4 py-2 rounded-full text-sm font-semibold">Todos</button>
+                <button class="bg-[#FFA8B4] text-white px-4 py-2 rounded-full text-sm font-semibold">Todos</button>
                 <button class="bg-gray-200 px-4 py-2 rounded-full text-sm">Machiatto</button>
                 <button class="bg-gray-200 px-4 py-2 rounded-full text-sm">Latte</button>
-                <button class="bg-gray-200 px-4 py-2 rounded-full text-sm">Americano</button>
             </div>
         </section>
 
         <!-- Produtos -->
-        <section class="max-w-sm mx-auto mt-4 px-4 grid grid-cols-2 gap-4">
-            <div class="bg-white p-3 rounded-lg shadow-md">
+        <section class="max-w-sm mx-auto pl px-4 grid grid-cols-2 gap-4">
+            <div class=" mt-4 inline-flex flex-col gap-2 p-2 pb-3">
                 <img src="images/Kinder_Brownie.png" class="w-full h-32 object-cover rounded-lg">
-                <h3 class="mt-2 font-semibold">Kinder Brownie</h3>
+                <h3 class="text-[#242424] font-sora text-base font-semibold leading-[150%] ">Kinder Brownie</h3>
                 <p class="text-gray-500 text-sm">Brownie</p>
-                <div class="flex justify-between items-center mt-2">
+                <div class="flex justify-between items-center ">
                     <p class="text-lg font-bold">R$ 4.53</p>
-                    <button class="bg-pink-400 text-white p-2 rounded-full">+</button>
+                    <a href="item.html"><button class="bg-[#FFA8B4] text-white gap-2.5 h-8 w-8 rounded-lg">+</button></a>
                 </div>
             </div>
 
-            <div class="bg-white p-3 rounded-lg shadow-md">
+            <div class=" mt-4 inline-flex flex-col  gap-2 p-2 pb-3">
                 <img src="images/Frappe_Pacoca.png" class="w-full h-32 object-cover rounded-lg">
-                <h3 class="mt-2 font-semibold">Frappe Paçoca</h3>
+                <h3 class="text-[#242424] font-sora text-base font-semibold leading-[150%] ">Frappe</h3>
                 <p class="text-gray-500 text-sm">Espresso</p>
-                <div class="flex justify-between items-center mt-2">
+                <div class="flex justify-between items-center">
                     <p class="text-lg font-bold">R$ 3.53</p>
-                    <button class="bg-pink-400 text-white p-2 rounded-full">+</button>
+                    <button class="bg-[#FFA8B4] text-white gap-2.5 h-8 w-8 rounded-lg">+</button>
                 </div>
             </div>
         </section>
         <div class="flex p-[24px] justify-center items-start gap-[56px] flex-shrink-0 bg-white">
-            <a href="index.html">
+            <a href="home.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                     <path
                         d="M9.64373 20.7821V17.7152C9.64372 16.9381 10.2757 16.3067 11.0584 16.3018H13.9326C14.7189 16.3018 15.3563 16.9346 15.3563 17.7152V20.7732C15.3562 21.4473 15.904 21.9951 16.5829 22H18.5438C19.4596 22.0023 20.3388 21.6428 20.9872 21.0007C21.6356 20.3586 22 19.4868 22 18.5775V9.86585C22 9.13139 21.6721 8.43471 21.1046 7.9635L14.443 2.67427C13.2785 1.74912 11.6154 1.77901 10.4854 2.74538L3.96701 7.9635C3.37274 8.42082 3.01755 9.11956 3 9.86585V18.5686C3 20.4637 4.54738 22 6.45617 22H8.37229C8.69917 22.0023 9.01349 21.8751 9.24547 21.6464C9.47746 21.4178 9.60793 21.1067 9.60792 20.7821H9.64373Z"
-                        fill="#A2A2A2" />
+                        fill="#FFA8B4" />
                 </svg>
             </a>
-            <a href="">
+            <a href="item.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
                     <mask id="mask0_3460_197" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="-1" width="21"
                         height="21">
@@ -99,17 +95,17 @@
                     <g mask="url(#mask0_3460_177)">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M5.21547 6.0401C4.77447 6.0401 3.30047 6.2181 2.87747 8.5021L2.10547 14.5021C1.85447 16.1851 2.04847 17.4031 2.68347 18.1401C3.31047 18.8681 4.43247 19.2221 6.11247 19.2221H14.4605C15.5085 19.2221 16.9395 19.0131 17.8035 18.0151C18.4895 17.2241 18.7255 16.0461 18.5055 14.5131L17.7265 8.4611C17.3945 6.9701 16.5185 6.0401 15.3945 6.0401H5.21547ZM14.4605 20.7221H6.11247C3.96947 20.7221 2.47647 20.1971 1.54747 19.1181C0.61447 18.0361 0.30247 16.4131 0.62047 14.2951L1.39647 8.2691C1.90647 5.5061 3.77147 4.5401 5.21547 4.5401H15.3945C16.8445 4.5401 18.6075 5.5031 19.2025 8.2041L19.9915 14.3111C20.2745 16.2821 19.9205 17.8631 18.9375 18.9971C17.9595 20.1251 16.4115 20.7221 14.4605 20.7221Z"
-                            fill="#FFA8B4" />
+                            fill="#A2A2A2" />
                     </g>
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M14.5978 5.82031C14.1838 5.82031 13.8478 5.48431 13.8478 5.07031C13.8478 3.10131 12.2458 1.50031 10.2778 1.50031H10.2628C9.32178 1.50031 8.40478 1.87931 7.73978 2.54031C7.07178 3.20531 6.68878 4.12831 6.68878 5.07031C6.68878 5.48431 6.35278 5.82031 5.93878 5.82031C5.52478 5.82031 5.18878 5.48431 5.18878 5.07031C5.18878 3.73131 5.73278 2.42231 6.68078 1.47731C7.62578 0.538305 8.92878 0.000305176 10.2598 0.000305176H10.2808C13.0738 0.000305176 15.3478 2.27431 15.3478 5.07031C15.3478 5.48431 15.0118 5.82031 14.5978 5.82031Z"
-                        fill="#FFA8B4" />
+                        fill="#A2A2A2" />
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M13.2433 10.3242H13.1973C12.7833 10.3242 12.4473 9.98822 12.4473 9.57422C12.4473 9.16022 12.7833 8.82422 13.1973 8.82422C13.6113 8.82422 13.9703 9.16022 13.9703 9.57422C13.9703 9.98822 13.6573 10.3242 13.2433 10.3242Z"
-                        fill="#FFA8B4" />
+                        fill="#A2A2A2" />
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M7.41219 10.3242H7.36719C6.95319 10.3242 6.61719 9.98822 6.61719 9.57422C6.61719 9.16022 6.95319 8.82422 7.36719 8.82422C7.78119 8.82422 8.14019 9.16022 8.14019 9.57422C8.14019 9.98822 7.82619 10.3242 7.41219 10.3242Z"
-                        fill="#FFA8B4" />
+                        fill="#A2A2A2" />
                 </svg>
             </a>
             <a href="">
